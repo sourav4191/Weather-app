@@ -5,7 +5,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
@@ -13,7 +15,13 @@
       }
     },
     "android": {
-      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.sourav4191.weatherapp"
     },
     "plugins": [
       [
@@ -22,6 +30,11 @@
           "locationAlwaysAndWhenInUsePermission": "Allow app to use location for weather data."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "18652fac-d391-4ecd-9356-2a74011417cd"
+      }
+    }
   }
 }
